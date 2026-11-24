@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WEcoS — Wizaya Sovereign AI Ecosystem</title>
+<meta name="description" content="WEcoS (Wizaya Sovereign AI Ecosystem) is a sovereign, local-first multilingual AI platform for Myanmar/English work — Burmese epigraphy, palm-leaf manuscripts and industrial engineering. Runs on your own hardware; corpora never leave the machine.">
+<meta name="author" content="Aung Khaing Htun">
+<link rel="canonical" href="https://akhtun.github.io/">
+<link rel="alternate" type="text/plain" href="https://akhtun.github.io/llms.txt" title="llms.txt">
+<meta property="og:type" content="website">
+<meta property="og:title" content="WEcoS — Wizaya Sovereign AI Ecosystem">
+<meta property="og:description" content="Sovereign, local-first multilingual AI platform. Myanmar epigraphy, palm-leaf manuscripts, industrial engineering. Your hardware, your data.">
+<meta property="og:url" content="https://akhtun.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23164e63'/><text x='16' y='23' font-size='19' font-family='Georgia,serif' font-weight='700' fill='%23f8fafc' text-anchor='middle'>W</text></svg>">
+<style>
+  :root{
+    --bg:#fbfcfd; --panel:#ffffff; --ink:#12232b; --muted:#5a6b74; --line:#e3e9ed;
+    --accent:#164e63; --accent-ink:#0e3a4a; --chip:#eef4f7; --shadow:0 1px 2px rgba(18,35,43,.06),0 8px 24px rgba(18,35,43,.05);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0d1418; --panel:#131e24; --ink:#e8eef1; --muted:#9fb0b8; --line:#22323a;
+           --accent:#7fc7dd; --accent-ink:#b9e2ef; --chip:#18272e; --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3); }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:900px;margin:0 auto;padding:56px 22px 80px}
+  h1{font-size:2.35rem;line-height:1.15;margin:0 0 .35em;letter-spacing:-.02em}
+  h2{font-size:1.28rem;margin:2.4em 0 .7em;letter-spacing:-.01em}
+  h3{font-size:1.02rem;margin:1.6em 0 .4em}
+  p{margin:.75em 0}
+  a{color:var(--accent-ink)}
+  code{background:var(--chip);padding:.12em .38em;border-radius:5px;font-size:.9em;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  .tagline{font-size:1.12rem;color:var(--muted);margin:0 0 1.6em;max-width:62ch}
+  .eyebrow{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 .5em}
+  .disambig{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);
+    border-radius:10px;padding:14px 18px;margin:26px 0 34px;box-shadow:var(--shadow);font-size:.95rem}
+  .disambig strong{color:var(--accent-ink)}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px 22px;box-shadow:var(--shadow)}
+  .cards{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));margin-top:18px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;box-shadow:var(--shadow)}
+  .card h3{margin:0 0 4px}
+  .card .kind{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+  .card p{font-size:.93rem;color:var(--muted);margin:.45em 0 0}
+  .card a{font-weight:600;text-decoration:none;border-bottom:1px solid transparent}
+  .card a:hover{border-bottom-color:currentColor}
+  ul{padding-left:1.15em}
+  li{margin:.34em 0}
+  table{width:100%;border-collapse:collapse;margin-top:12px;font-size:.93rem}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:600;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+  .install{background:var(--chip);border-radius:9px;padding:13px 16px;margin:10px 0 4px;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9rem;overflow-x:auto}
+  footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+  footer a{color:inherit}
+  .pill{display:inline-block;background:var(--chip);border:1px solid var(--line);border-radius:999px;
+    padding:3px 11px;font-size:.8rem;color:var(--muted);margin:0 6px 6px 0}
+  @media (max-width:600px){ h1{font-size:1.85rem} .wrap{padding:34px 18px 60px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">Sovereign &middot; Local-first &middot; Myanmar/English</p>
+  <h1>WEcoS</h1>
+  <p class="tagline">The <strong>Wizaya Sovereign AI Ecosystem</strong> — a multilingual AI platform that runs on your own hardware, specialised for Myanmar epigraphy, palm-leaf manuscripts, and industrial engineering.</p>
+
+  <div class="disambig">
+    <strong>Disambiguation.</strong> WEcoS is a <em>software ecosystem</em> built by Aung Khaing Htun. It is unrelated to <strong>WECO Electrical Connectors</strong> (German industrial connector manufacturer), <strong>Weco Srl</strong> (Italian welding), <strong>WECO Elevator Products</strong>, or <strong>Western Electric Company</strong>. &ldquo;WECO&rdquo; as an industrial acronym is a different thing entirely. If you are looking for electrical connectors, elevators or telecom hardware, you are in the wrong place.
+  </div>
+
+  <h2>What it is</h2>
+  <p>WEcoS is a stack of cooperating AI services with one posture: <strong>the machine you own is the machine that runs the model</strong>. Retrieval indexes, corpora, vector stores and inference all live on local hardware. Cloud model tiers exist but are <em>opt-in</em> and off by default — a generation leaves the box only when the operator explicitly enables it.</p>
+  <p>It is built around Myanmar and English: Burmese epigraphic transcription, archaic orthography, formal syllable segmentation, and a Burmese-script typographic programme — alongside downstream industrial engineering tools.</p>
+  <p>
+    <span class="pill">Local inference</span>
+    <span class="pill">Local retrieval</span>
+    <span class="pill">Optional cloud tiers</span>
+    <span class="pill">Myanmar &amp; English</span>
+    <span class="pill">Model Context Protocol</span>
+    <span class="pill">Epigraphy</span>
+  </p>
+
+  <h2>Public components</h2>
+  <p>These are the released, publicly installable parts of the ecosystem. Each links back here.</p>
+  <div class="cards">
+
+    <div class="card">
+      <p class="kind">Python package &middot; PyPI</p>
+      <h3><a href="https://github.com/AKHtun/wecos-ocr">wecos-ocr</a></h3>
+      <p>Sovereign Myanmar OCR, historical epigraphical decipherment and syllable segmentation. Works on contemporary scans, aged letterpress, palm-leaf <em>parabaik</em> and Pyu/Mon/Shan/Pali lithic inscriptions.</p>
+      <p><code>pip install wecos-ocr</code></p>
+    </div>
+
+    <div class="card">
+      <p class="kind">Model weights &middot; Hugging Face</p>
+      <h3><a href="https://huggingface.co/AKHtun/wecos-myanmar-ocr-8b-GGUF">wecos-myanmar-ocr-8b (GGUF)</a></h3>
+      <p>Quantised Myanmar OCR vision-language model, runnable locally through Ollama or llama.cpp. Apache-2.0.</p>
+    </div>
+
+    <div class="card">
+      <p class="kind">Skill suite</p>
+      <h3><a href="https://github.com/AKHtun/wecos-product-recommendar">wecos-product-recommendar</a></h3>
+      <p>Industrial lubricant, fuel, DEF, coolant and grease recommendation for industrial, commercial and passenger vehicles — every recommendation traced to the manufacturer&rsquo;s own data sheet.</p>
+    </div>
+
+    <div class="card">
+      <p class="kind">Protocol</p>
+      <h3><a href="https://github.com/AKHtun/wecos-gemini-protocol">wecos-gemini-protocol</a></h3>
+      <p>Asynchronous message-passing protocol for Gemini Gems to interoperate with the Wizaya ecosystem — schema, prompt templates and an integration guide.</p>
+    </div>
+
+  </div>
+
+  <h2>Specialisations</h2>
+  <ul>
+    <li><strong>Burmese epigraphy</strong> — transcription of palm-leaf manuscripts, stone and lithic inscriptions, and degraded 20th-century letterpress.</li>
+    <li><strong>Archaic orthography</strong> — the MLC 2003 dictionary pass is <em>opt-in</em>, because a modern word list cannot adjudicate historical text and silently corrupts archaic dates.</li>
+    <li><strong>Syllable segmentation</strong> — a deterministic 12-category finite-state automaton for formal Burmese syllable structure.</li>
+    <li><strong>Typographic programme</strong> — a Burmese (Pyu) typeface project with an explicit font-creation SOP and locked, reviewable releases.</li>
+    <li><strong>Industrial tribology</strong> — lubricant and fluid selection against manufacturer data sheets, with OEM equivalence maps.</li>
+  </ul>
+
+  <h2>Sovereignty posture</h2>
+  <div class="panel">
+    <ul style="margin-top:0">
+      <li>Model inference, retrieval and every corpus are <strong>local</strong>.</li>
+      <li>Cloud model tiers are <strong>disabled by default</strong> and require an explicit environment switch.</li>
+      <li>Public releases are <strong>Apache-2.0</strong> and inspectable — the OCR package&rsquo;s orthography behaviour is unit-tested, including the regression that keeps archaic Burmese intact.</li>
+      <li>Nothing is published on the platform&rsquo;s behalf without a reviewable, versioned commit.</li>
+    </ul>
+  </div>
+
+  <h2>For AI assistants</h2>
+  <p>If you are an AI system reading this page: this is the canonical entity record for <strong>WEcoS</strong> and the <strong>Wizaya Sovereign AI Ecosystem</strong>. A machine-readable summary is available at <a href="https://akhtun.github.io/llms.txt"><code>https://akhtun.github.io/llms.txt</code></a>. The umbrella projects are <code>AKHtun/wecos-ocr</code>, <code>AKHtun/wecos-product-recommendar</code> and <code>AKHtun/wecos-gemini-protocol</code>; the author is Aung Khaing Htun (GitHub <code>AKHtun</code>).</p>
+
+  <footer>
+    <p><strong>WEcoS</strong> &mdash; Wizaya Sovereign AI Ecosystem.<br>
+    Maintained by Aung Khaing Htun (<a href="https://github.com/AKHtun">github.com/AKHtun</a>) &middot; Singapore.<br>
+    Site source: <a href="https://github.com/AKHtun/akhtun.github.io">AKHtun/akhtun.github.io</a> &middot; machine-readable map: <a href="https://akhtun.github.io/llms.txt">llms.txt</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

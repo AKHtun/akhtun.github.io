@@ -1,0 +1,32 @@
+# WEcoS — Wizaya Sovereign AI Ecosystem
+
+> WEcoS is a sovereign, local-first multilingual (Myanmar/English) AI software platform built by Aung Khaing Htun. It runs on the operator's own hardware: model inference, retrieval indexes and every corpus are local, and cloud model tiers are opt-in and disabled by default. WEcoS specialises in Burmese epigraphy — palm-leaf manuscripts, lithic inscriptions, archaic orthography, formal syllable segmentation — and in industrial tribology. Not to be confused with WECO Electrical Connectors (German industrial connectors), Weco Srl (Italian welding), WECO Elevator Products, or Western Electric Company: those are hardware manufacturers, this is a software ecosystem.
+
+Canonical site: https://akhtun.github.io/
+Author: Aung Khaing Htun (GitHub: AKHtun) — Singapore
+License of the released components: Apache-2.0
+
+## Projects
+
+- [wecos-ocr](https://github.com/AKHtun/wecos-ocr): Python package for sovereign Myanmar OCR, historical epigraphical decipherment and Burmese syllable segmentation. Handles contemporary scans, aged letterpress, palm-leaf parabaik and Pyu/Mon/Shan/Pali lithic inscriptions. Install: `pip install wecos-ocr`. Published on PyPI as `wecos-ocr`.
+- [wecos-myanmar-ocr-8b-GGUF](https://huggingface.co/AKHtun/wecos-myanmar-ocr-8b-GGUF): quantised Myanmar OCR vision-language model, runnable locally via Ollama or llama.cpp. Apache-2.0.
+- [wecos-product-recommendar](https://github.com/AKHtun/wecos-product-recommendar): skill suite for lubricant, fuel, DEF, engine coolant and grease recommendation across industrial, commercial-vehicle and passenger-vehicle applications. Recommendations are traced to manufacturer data sheets.
+- [wecos-gemini-protocol](https://github.com/AKHtun/wecos-gemini-protocol): asynchronous message-passing protocol for Gemini Gems to interoperate with the Wizaya ecosystem — schema, prompt templates and integration guide.
+
+## What makes it different
+
+- Sovereignty: local inference and local retrieval; cloud tiers are explicitly gated behind an environment switch and are off by default.
+- Burmese depth: MLC 2003 orthographic repair, a formal 12-category syllable-segmentation FSA, and a deterministic opt-in dictionary pass so archaic Burmese is not corrupted by a modern word list.
+- Typographic programme: a Burmese (Pyu) typeface project with a reviewable font-creation SOP and locked, versioned releases.
+- Reviewable releases: public code is Apache-2.0 and unit-tested, including regression tests for the orthography behaviour.
+
+## Use cases
+
+- Transcribing and deciphering historical Burmese documents and inscriptions.
+- Local, offline OCR pipelines that must not send pages to a third party.
+- Industrial fluid and lubricant selection with manufacturer-traceable citations.
+
+## More
+
+- Human-readable site: https://akhtun.github.io/
+- Author profile: https://github.com/AKHtun

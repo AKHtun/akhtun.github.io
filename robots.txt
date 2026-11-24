@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Machine-readable summary for AI crawlers — fetch this alongside the page:
+#   https://akhtun.github.io/llms.txt
